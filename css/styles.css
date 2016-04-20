@@ -200,11 +200,11 @@ nav li a:hover, nav li a:active {
 	background-size: cover;
 }
 #jerash-bg {
-	background: #888 url(../img/jerash.jpg) no-repeat center center;
+	background: #888 url(../img/jerash.JPG) no-repeat center center;
 	background-size: cover;
 }
 #amman-bg{
-	background: #888 url(../img/amman.jpg) no-repeat center center;
+	background: #888 url(../img/amman.JPG) no-repeat center center;
 	background-size: cover;
 }
 #deadsea-bg{
@@ -212,7 +212,7 @@ nav li a:hover, nav li a:active {
 	background-size: cover;
 }
 #wadiHessa-bg {
-  background: #888 url(../img/hessa.jpg) no-repeat center center;
+  background: #888 url(../img/hessa.JPG) no-repeat center center;
 	background-size: cover;
 }
 #petra-bg {
@@ -220,7 +220,7 @@ nav li a:hover, nav li a:active {
 	background-size: cover;
 }
 #wadi-rum-bg {
-	background: #888 url(../img/rum.jpg) no-repeat center center;
+	background: #888 url(../img/rum.JPG) no-repeat center center;
 	background-size: cover;
 }
 
