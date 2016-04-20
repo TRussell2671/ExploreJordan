@@ -390,3 +390,16 @@ nav li a:hover, nav li a:active {
   transform:translateX(-25px);
   -webkit-transform:translateX(-25px);
 }
+
+/*
+  Copyright
+*/
+
+#copyright {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+  font-family: Oswald;
+  font-size: 0.75em;
+}
