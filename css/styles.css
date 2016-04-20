@@ -1,0 +1,392 @@
+@font-face {
+    font-family: Chunkfive;
+    src: url(../font/Chunkfive.otf);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(../font/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: OswaldBold;
+    src: url(../font/Oswald-DemiBold.ttf);
+}
+
+@font-face {
+    font-family: OswaldHeavy;
+    src: url(../font/Oswald-Heavy.ttf);
+}
+
+@font-face {
+    font-family: TitlingHeavy;
+    src: url(../font/built_titling_heavy.ttf);
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
+/*
+	Main Logo
+*/
+
+.logo {
+	  position: relative;
+    display: inline-block;
+    font-size: 92px;
+	  font-family: OswaldHeavy;
+    line-height: 1;
+ 	  padding: 50px 75px;
+    color: rgba(255,255,255,0.9);
+    border: 15px solid rgba(255, 108, 0,0.6);
+    z-index: 10;
+}
+.logo:before,
+.logo:after {
+    position: absolute;
+    content: '';
+}
+.logo:after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+.logo-subpage {
+	font-size: 26px;
+	border: 4px solid rgba(255, 108, 0,0.6);
+	padding: 10px 20px;
+	margin: 15px 0 0 15px;
+	opacity: 0.5;
+}
+.logo-subpage:hover {
+	opacity: 1;
+}
+@media (max-width: 768px) {
+  .logo {
+    text-align: center;
+    font-size: 48px;
+    margin: 0 5px;
+    padding: 7px 15px;
+    border: 7px solid rgba(255, 108, 0,0.6);
+  }
+  .logo-subpage {
+    font-size: 18px;
+  	border: 3px solid rgba(255, 108, 0,0.6);
+  	padding: 5px 10px;
+    margin: 5px 0 0 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .logo {
+    text-align: center;
+    font-size: 64px;
+    padding: 20px 40px;
+    border: 12px solid rgba(255, 108, 0,0.6);
+  }
+  .logo-subpage {
+    font-size: 24px;
+  	border: 5px solid rgba(255, 108, 0,0.6);
+  	padding: 5px 10px;
+  }
+}
+
+/*
+	Top Navigation / Header Page
+*/
+
+.main-page {
+	width: 100%;
+	height: 100vh;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%
+}
+nav {
+  margin-top: 65px;
+  font-family: OswaldBold;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  z-index: 10000;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+	display: inline;
+  padding: 0 15px;
+  color: rgba(200,200,200,0.5);
+}
+nav li a:link, nav li a:visited  {
+  text-decoration: none;
+  color: #fff
+}
+nav li a:hover, nav li a:active {
+  text-decoration: none;
+  color: rgba(255, 108, 0,1);
+}
+@media (max-width: 768px) {
+  nav {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+  nav ul {
+    text-align: center;
+    margin: 0 5px;
+  }
+  nav li {
+    padding: 0 3px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  nav {
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+  nav li {
+    padding: 0 3px;
+  }
+}
+
+
+/*
+	Page Slides
+*/
+
+.page {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: #fff;
+	margin-bottom: 300px;
+}
+.nav-hidden {
+  display: none;
+}
+@media (max-width: 768px) {
+  .row-center-align-small {
+    text-align: center;
+  }
+  .nav-hidden {
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
+.shadow:before {
+	content:'';
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:-1px;
+	height:266px;
+	background:url(../img/shadow.png) bottom repeat-x;
+	opacity: 0.9;
+}
+#explore-jordan {
+  background: #888 url(../img/main.jpg) no-repeat center center;
+	background-size: cover;
+}
+#jerash-bg {
+	background: #888 url(../img/jerash.jpg) no-repeat center center;
+	background-size: cover;
+}
+#amman-bg{
+	background: #888 url(../img/amman.jpg) no-repeat center center;
+	background-size: cover;
+}
+#deadsea-bg{
+	background: #888 url(../img/dead.JPG) no-repeat center center;
+	background-size: cover;
+}
+#wadiHessa-bg {
+  background: #888 url(../img/hessa.jpg) no-repeat center center;
+	background-size: cover;
+}
+#petra-bg {
+	background: #888 url(../img/petra.JPG) no-repeat center center;
+	background-size: cover;
+}
+#wadi-rum-bg {
+	background: #888 url(../img/rum.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+/*
+	Overlay Map
+*/
+
+.map-container {
+  top: 0;
+  bottom: 0;
+  right: -350px;
+  overflow-x: hidden !important;
+}
+.map-fixed {
+	position: fixed;
+  overflow-x: hidden !important;
+}
+.overlay-map {
+  height: 100vh;
+  opacity: 0.4;
+  overflow: hidden !important;
+}
+.pin {
+  position: absolute;
+  color: #eee;
+  z-index: 1000;
+}
+.pin-toggle {
+  color: yellow;
+  font-size: 4em !important;
+}
+@media (max-width: 768px) {
+  .map-fixed, .map-container {
+    display: none;
+  }
+}
+#jerash-pin {
+  top: 9%;
+  right: 25%;
+}
+#amman-pin {
+  top: 17%;
+  right: 22%;
+}
+#deadsea-pin {
+  top: 29%;
+  right: 53%;
+}
+#hessa-pin {
+  top: 52%;
+  right: 19%;
+}
+#petra-pin {
+  top: 66%;
+  right: 62%;
+}
+#rum-pin {
+  top: 81%;
+  right: 56%;
+}
+
+/*
+	Content Pane
+*/
+
+.location-title {
+	font-family: Chunkfive;
+	font-size: 62px;
+	font-weight: 300;
+	color: #fff;
+}
+.text-shadow {
+  text-shadow: 2px 2px 25px rgba(0,0,0,0.3);
+}
+.panel {
+  display: block;
+  position: relative;
+	border: none;
+	background-color: rgba(0,0,0,0.5);
+	font-size: 16px;
+	color: #ddd;
+	font-family: Oswald;
+}
+.panel-preview {
+	background-color: rgba(0,0,0,0.4);
+	border: 0;
+	color: #fff;
+	width: 100%;
+	cursor: pointer;
+	text-align: left;
+	padding: 5px 45px 5px 15px;
+}
+.panel-body {
+	color: #ddd;
+  letter-spacing: 0.03em;
+	overflow: auto;
+	overflow-x: hidden;
+	margin: 0;
+	padding: 15px;
+	font-size: 16px;
+  max-height: 50vh;
+}
+.panel-body h3 {
+  font-family: OswaldBold, sans-serif;;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  border-bottom: 2px solid rgba(255, 108, 0,1);
+}
+.panel-body .img-responsive {
+  margin-bottom: 15px;
+}
+.panel-body a {
+  color: rgba(255, 108, 0,1);
+  text-decoration: none;
+}
+.panel-body a:hover {
+  color: rgba(255, 167, 102, 1);
+  text-decoration: none;
+}
+.arrow {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #fff;
+	position: absolute;
+	right: 0.9em;
+	top: 0.7em;
+}
+@media (max-width: 768px) {
+  .location-title {
+    font-size: 40px;
+  }
+  .panel-body {
+    max-height: 40vh
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .panel-body {
+    max-height: 45vh;
+  }
+}
+
+/*
+	Scroll Buttons
+*/
+
+.scroll-container {
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	right: 50%;
+	font-size: 16px;
+	color: rgb(255,167,0);
+	font-family: Oswald;
+}
+.scroll-button {
+	text-align: center;
+	width: 50px;
+	height: 40px;
+  margin-bottom: 20px;
+	cursor: pointer;
+	opacity: 1;
+}
+#scroll-main{
+  width: 200px;
+  transform:translateX(-25px);
+  -webkit-transform:translateX(-25px);
+}
